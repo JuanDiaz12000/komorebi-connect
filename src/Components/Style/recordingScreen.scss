@@ -1,0 +1,71 @@
+.RecordingContainer{
+    height: 60vh;
+    width: 35vw;
+    background-color: #ffffff;
+    border-radius: 2vh;
+    box-shadow: 0.5vw 0.95vh 0 0 rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    h3{
+
+        margin-left: 0.75vw;
+        font-size: 2.5rem;
+        font-weight: 450;
+    }
+    .topCont{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        .isRecordingTag{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 600;
+            font-size: 1.5rem;
+            border-radius: 1.35vh;
+            background-color: red;
+            color: #ffffff;
+            height: 7.5vh;
+            width: 7.5vw;
+        }
+        .notRecordingTag{
+            border-radius: 1.35vh;
+            color: #ffffff;
+            height: 7.5vh;
+            width: 7.5vw;
+        }
+    }
+    .controllers{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-bottom: 5vh;
+    }
+    .buttonR{
+        box-shadow: 0.5vw 0.75vh 0.9vh 0 rgba(0, 0, 0, 0.15);
+        //background-color: #232f3e;
+        height: 7.5vh;
+        width: 10vw;
+        border-color: #fafafa;
+        border: none;
+        border-radius: 5vh;
+        color: #ffffff;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        h4{
+            color: #ffffff;
+            font-size: 1.25rem;
+            margin-top: auto;
+            margin-bottom: auto;
+            margin-left: 0.5vw;
+            margin-right: auto;
+            text-transform: none;
+        }
+
+    }
+}

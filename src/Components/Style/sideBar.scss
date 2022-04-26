@@ -1,0 +1,58 @@
+.sideBar{
+    height: 92vh;
+    width: 5vw;
+    background-color: #232f3e;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    a{
+        color: inherit;
+        text-decoration: none;
+        
+    }
+
+    .accesses{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2vh;
+        height: auto;
+        align-items: center;
+        font-size: 1rem;
+        //color: #fafafa;
+    }
+
+    .icons{
+        color: #fafafa;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 0vh;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        p{
+            margin-top: 0.25vh;
+            font-weight:500;
+            font-size: 0.9rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    .buttonClass{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 0vh;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        color: #fafafa;
+    }
+
+
+
+
+}

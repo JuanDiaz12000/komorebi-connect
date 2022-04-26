@@ -1,0 +1,22 @@
+.mainVideoSelect{
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    .Selector{
+        margin-left: 60vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-bottom: 2.5vh;
+    }
+    .videos{
+        overflow:auto;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 0vh;
+        scroll-behavior: smooth;
+    }
+}

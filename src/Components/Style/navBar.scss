@@ -1,0 +1,41 @@
+.navBar{
+    display: flex;
+    background-color: #232f3e;
+    height: 8vh;
+    width: 100vw;
+    color: #fafafa;
+    justify-content: space-between;
+    h1{
+        margin-left: 3vw;
+        font-weight: 400;
+    }
+
+    .userInfo{
+        color: #fafafa;
+        display: flex;
+        justify-content:center;
+        margin-right: 7vw;
+        margin-top: auto;
+        margin-bottom: auto;
+        .agentIcon{
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+
+        .userTags{
+            display: flex;
+            flex-direction: column;
+            margin-left: 1vw;
+            height: 8vh;
+            justify-content: center;
+            h2{
+                font-size: medium;
+                margin-bottom: 0vh;
+            }
+            p{
+                margin-top: 0.5vh;
+            }
+        }
+    }
+
+}
