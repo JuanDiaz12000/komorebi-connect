@@ -19,11 +19,14 @@ code {
   display: flex;
   flex-direction: row;
   .centerPart{
+    margin-top: 0vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;
     align-items: center;
+    flex-wrap: wrap;
     h2{
       color: #262626;
       font-weight: 600;

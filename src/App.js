@@ -7,7 +7,9 @@ import VideoSelect from "./Components/videoSelect";
 import RecordingScreenDialog from "./Components/recordingScreen";
 import AmazonConnectWindow from "./Components/amazonConnectWindow";
 import Login from "./Components/login";
+import Grabador from "./Components/Recorder";
 import "./index.scss"
+import VideoSearchPage from "./Pages/search";
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 
 
@@ -15,40 +17,20 @@ import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 function App() {
   return (
     <Router>
-{/*         <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-            <li>
-              <Link to="/users">Users</Link>
-            </li>
-          </ul>
-        </nav> */}
-
-        {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
         <Routes>
-          <Route path="/about" element={<About/>}/>
-          <Route path="/users" element={<Users/>}/>
-          <Route path="/" element={<LogInRoute/>}/>
+          <Route path="/video-search" element={<VideoSearchPage/>}/>
+          <Route path="/video" element={<Grabador/>}/>
+          <Route path="/users" element={<About/>}/>
+          <Route path="/" element={<Login/>}/>
         </Routes>
     </Router>
   );
 }
 
 
-function LogInRoute() {
-  return <Login/>;
-}
 
 function About() {
   return (
-    <div>
-    <NavBar userName="Juan Díaz" userType="Manager"/>
     <div className="centerScreen">
       <SideBar/>
       <div className='centerPart' style={{flexDirection:'row', justifyContent:'space-between', alignContent:'center'}}>
@@ -56,23 +38,19 @@ function About() {
         <RecordingScreenDialog/>
       </div>
     </div>
-    </div>
   )
 }
 
 function Users() {
-  return(
-    <div>
-    <NavBar userName="Juan Díaz" userType="Manager"/>
+  return(    
     <div className="centerScreen">
-      <SideBar/>
+    <SideBar/>
       <div className='centerPart'>
           <h2>Search</h2>
           <SearchBar/>
           <VideoSelect/>
       </div>
     </div>
-  </div>
   );
 }
 

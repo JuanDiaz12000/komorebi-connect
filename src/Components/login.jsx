@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom';
 function Login(){
     let navigate = useNavigate(); 
     const routeChange= ()=>{ 
-      navigate('/about');
+      navigate('/users');
     }
     return(
         <div className='loginScreen'>

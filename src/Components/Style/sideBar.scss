@@ -1,14 +1,39 @@
-.sideBar{
-    height: 92vh;
-    width: 5vw;
+nav{
+    width: auto;
     background-color: #232f3e;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    padding-bottom: none;
+    ul{
+        color: #fafafa;
+        list-style: none;
+        //margin-right: 1vw;
+    }
+
+    ul li{
+        padding-right: 2.5vw;
+        /* padding-left: 2.5vw; */
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2vh;
+        height: auto;
+        align-items: center;
+        font-size: 1rem;
+    }
+
 
     a{
         color: inherit;
         text-decoration: none;
+        margin-top: 0.25vh;
+        font-weight:600;
+        font-size: 1rem;
+        margin-left: auto;
+        margin-right: auto;
         
     }
 
@@ -41,18 +66,4 @@
             margin-right: auto;
         }
     }
-
-    .buttonClass{
-        display: flex;
-        flex-direction: column;
-        padding-bottom: 0vh;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        color: #fafafa;
-    }
-
-
-
-
 }
