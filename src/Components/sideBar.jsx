@@ -45,7 +45,7 @@ function SideBar(props){
                     </a>
                 </div>
                 <div className="icons">
-                    <a href="">
+                    <a href="/aws-connect">
                     <RadioButtonCheckedIcon  sx={{fontSize: 40}}/>
                     <p>Record</p>
                     </a>

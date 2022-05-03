@@ -1,7 +1,7 @@
 import '../../index.scss'
 import SideBar from '../../Components/sideBar'
-import SearchBar from '../../Components/searchVideoBar'
-import VideoSelect from '../../Components/videoSelect'
+import SearchBar from './components/searchVideoBar'
+import VideoSelect from './components/videoSelect'
 
 function VideoSearchPage() {
     return(    

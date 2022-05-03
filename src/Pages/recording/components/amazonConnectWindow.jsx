@@ -1,5 +1,5 @@
 import "./Style/amazonConnectWindow.scss"
-import ConnectLogo from './assets/connectLogo.svg'
+import ConnectLogo from '../../../Components/assets/connectLogo.svg'
 function AmazonConnectWindow(){
 
     return(
