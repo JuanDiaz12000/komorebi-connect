@@ -1,10 +1,10 @@
 import { ImportantDevices } from "@mui/icons-material";
 import React from "react";
-import SideBar from "./Components/sideBar";
+import SideBar from "./GlobalComponents/sideBar";
 import RecordingScreenDialog from "./Pages/recording/components/recordingScreen";
 import AmazonConnectWindow from "./Pages/recording/components/amazonConnectWindow";
 import Login from "./Pages/logIn";
-import Grabador from "./Components/Recorder";
+import Grabador from "./GlobalComponents/Recorder";
 import "./index.scss"
 import RecordingSessionPage from "./Pages/recording";
 import VideoSearchPage from "./Pages/search";

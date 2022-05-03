@@ -1,5 +1,5 @@
 import '../../index.scss'
-import SideBar from '../../Components/sideBar'
+import SideBar from '../../GlobalComponents/sideBar'
 import SearchBar from './components/searchVideoBar'
 import VideoSelect from './components/videoSelect'
 

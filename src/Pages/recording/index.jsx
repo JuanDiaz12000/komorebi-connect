@@ -1,7 +1,7 @@
 import '../../index.scss'
 import RecordingScreenDialog from './components/recordingScreen';
 import AmazonConnectWindow from './components/amazonConnectWindow';
-import SideBar from '../../Components/sideBar';
+import SideBar from '../../GlobalComponents/sideBar';
 
 function RecordingSessionPage() {
     return (

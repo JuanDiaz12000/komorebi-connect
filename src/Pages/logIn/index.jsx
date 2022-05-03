@@ -1,7 +1,7 @@
 import './Style/login.scss'
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
-import KomorebiLogo from '../../Components/assets/Komorebi.svg'
+import KomorebiLogo from '../../GlobalComponents/assets/Komorebi.svg'
 import { useNavigate } from 'react-router-dom';
 
 function Login(){
