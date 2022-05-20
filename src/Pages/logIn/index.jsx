@@ -1,64 +1,74 @@
 import './Style/login.scss'
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
-import KomorebiLogo from '../../GlobalComponents/assets/Komorebi.svg'
+import KomorebiLogo from '../../GlobalComponents/assets/Komorebi.svg';
 import { useNavigate } from 'react-router-dom';
+import React, { useState } from "react";
+import axios from "axios";
 
-function Login(){
-    let navigate = useNavigate(); 
-    const routeChange= ()=>{ 
-      navigate('/users');
+
+function Login() {
+    const [username, setUsername] = useState('');
+    const [password, setPassword] = useState('');
+
+    //const[post, setPost] = React.useState(null)
+    const miPostsListURL = "http://localhost:8080/signin"
+
+    function crearPost(username, password) {
+        //console.log(username +  "-----" + password)
+        axios.post(miPostsListURL, {
+            username: username,
+            password: password,
+        }).then((response) => {routeChange()})
+        .catch(e => {
+            console.log(e)
+        })
     }
+
+    let navigate = useNavigate(); 
+    const routeChange = () => { 
+        navigate('/aws-connect');
+    }
+
     return(
         <div className='loginScreen'>
-            <img src='https://wallpapercave.com/wp/wp8063327.jpg' style={{height:'100vh', width:'65vw'}}/>
+            <img 
+                className='loginScreen-logo'
+                alt='img'
+                src='https://wallpapercave.com/wp/wp8063327.jpg' 
+                />
+
             <div className='logInPanel'>
                 <div className='Komorebi'>
-                    <img src={KomorebiLogo} style={{height:'6.5vh', width:'6.5vw'}}/>
+                    <img src={KomorebiLogo} alt='img' />
                     <h1>Komorebi Connect</h1>
                 </div>
+
                 <div className='credentials'>
                     <TextField
                     type="email"
                     label="Username or Email Address"
-                    style={{marginBottom:'3.5vh', height:'', width:'18.5vw', fontSize:'2rem'}}
+                    className='credentials-textfield'
+                    value={username}
+                    onChange={(event) => {setUsername(event.target.value)}}
                     />
+
                     <TextField
-                    /* id="outlined-password-input" */
                     label="Password"
                     type="password"
-                    style={{marginBottom:'3.5vh', width:'18.5vw', fontSize:'2rem'}}
+                    className='credentials-textfield'
+                    value={password}
+                    onChange={(event) => {setPassword(event.target.value)}}
                     />
+                    
                     <Button
-                    onClick= {routeChange}
-                    style={{
-                        backgroundColor: '#ff9900',
-                        color: '#ffffff',
-                        width: '8.5vw',
-                        height: '5.25vh',
-                        justifyContent: 'center',
-                        borderRadius: '2vw',
-                        boxShadow: '0 0.45vh 0 0 rgba(0, 0, 0, 0.05)',
-                        fontWeight: 700,
-                        fontSize: '1.25rem',
-                        marginTop: '5vh',
-                        marginBottom: 'auto',
-                        marginLeft: 'auto',
-                        marginRight: 'auto',
-                        textDecoration: 'none',
-                        display: 'flex',
-                        flexDirection: 'row',
-                        alignItems: 'center',
-                        textTransform: 'none'
-                    }}
+                    onClick = {routeChange}/* {() => crearPost(username, password)} */
+                    className="credentials-button"
                     >Log In</Button>
                 </div>
-                
             </div>
         </div>
     )
-
-
 }
 
-export default Login;
+export default Login

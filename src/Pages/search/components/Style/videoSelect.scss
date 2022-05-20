@@ -3,9 +3,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-
+    align-items: center;
     .Selector{
-        margin-left: 60vh;
+        margin-left: auto;
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
@@ -13,10 +13,13 @@
     }
     .videos{
         overflow:auto;
+        width: 77.5vw;
         height: 50vh;
         display: flex;
         flex-direction: column;
-        padding-bottom: 0vh;
         scroll-behavior: smooth;
+        @media (max-width: 1200px) {
+            width: 85vw;
+        }
     }
 }

@@ -13,7 +13,7 @@ import Drawer from '@mui/material/Drawer';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
-
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 /* const drawerWidth = 180; */
 
 /* interface Props {
@@ -51,31 +51,31 @@ function SideBar(props){
                     </a>
                 </div>
                 <div className="icons">
-                    <a href="">
+                    <a href="/user-administration">
                     <PersonIcon  sx={{fontSize: 40}}/>
                     <p>Users</p>
                     </a>
                 </div>
                 <div className="icons">
-                    <a href="">
+                    <a>
                     <LocalOfferIcon  sx={{fontSize: 40}}/>
                     <p>Tags</p>
                     </a>
                 </div>
                 <div className="icons">
-                    <a href="">
+                    <a href="/statistics">
                     <InsightsIcon  sx={{fontSize: 40}}/>
                     <p>Statistics</p>
                     </a>
                 </div>
                 <div className="icons">
-                  <a href="">
+                  <a>
                   <SettingsIcon  sx={{fontSize: 40}}/>
                     <p>Settings</p>
                   </a>
                 </div>
                 <div className="icons">
-                    <a href="">
+                    <a>
                     <HelpIcon  sx={{fontSize: 40}}/>
                       <p>Help</p>
                     </a>
@@ -116,9 +116,21 @@ function SideBar(props){
                 >
                   <MenuIcon />
                 </IconButton>
-                <h2>
+                <h2
+                style={{
+                  width:'25vw'
+                }}>
                     Komorebi Connect
                 </h2>
+                <div className="userInfo">
+                <div className="agentIcon">
+                <AccountCircleIcon color="#fafafa" sx={{fontSize:40}}/>
+                </div>                
+                <div className="userTags">
+                    <h2>{props.userName}</h2>
+                    <p>{props.userType}</p>
+                </div>
+                </div>
               </Toolbar>
             </AppBar>
             <Box

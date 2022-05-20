@@ -1,0 +1,13 @@
+[
+  {
+    "month": "September 2019",
+    "ModelA": 118,
+    "ModelAColor": "hsl(99, 70%, 50%)",
+    "Need Follow-up": 171,
+    "Need Follow-upColor": "hsl(257, 70%, 50%)",
+    "Hang up Call": 30,
+    "Hang up CallColor": "hsl(203, 70%, 50%)",
+    "Not Interested": 55,
+    "Not InterestedColor": "hsl(183, 70%, 50%)"
+  }
+]

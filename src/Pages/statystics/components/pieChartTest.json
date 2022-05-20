@@ -1,0 +1,32 @@
+[
+    {
+      "id": "ToubleShooting",
+      "label": "ToubleShooting",
+      "value": 592,
+      "color": "hsl(68, 70%, 50%)"
+    },
+    {
+      "id": "Sales",
+      "label": "Sales",
+      "value": 475,
+      "color": "hsl(222, 70%, 50%)"
+    },
+    {
+      "id": "Sheduling",
+      "label": "Sheduling",
+      "value": 467,
+      "color": "hsl(247, 70%, 50%)"
+    },
+    {
+      "id": "Complaint",
+      "label": "Complaint",
+      "value": 184,
+      "color": "hsl(155, 70%, 50%)"
+    },
+    {
+      "id": "Information",
+      "label": "Information",
+      "value": 275,
+      "color": "hsl(104, 70%, 50%)"
+    }
+  ]

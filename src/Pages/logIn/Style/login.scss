@@ -1,4 +1,4 @@
-.loginScreen{
+.loginScreen {
     justify-content: flex-end;
     height: 100vh;
     width: 100vw;
@@ -6,7 +6,13 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    .logInPanel{
+
+    &-logo {
+        height: 100vh;
+        width:65vw;
+    }
+
+    .logInPanel {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -17,7 +23,8 @@
         border-radius: 2vh;
         background-color: #fafafa;
         align-items: center;
-        .Komorebi{
+        
+        .Komorebi {
             display: flex;
             flex-direction: row;      
             justify-content: flex-start;
@@ -25,18 +32,49 @@
             margin-right: auto;
             align-items: center;
             margin-top: 5vh;
-            h1{
+            
+            h1 {
                 font-size: '2rem';
                 color: #262626;
             }
+
+            img {
+                height:6.5vh; 
+                width: 6.5vw;
+            }
         }
-        .credentials{
+
+        .credentials {
             margin-top: 7.5vh;
             display: flex;
             justify-content: flex-start;
             align-items: center;
             flex-direction: column;
             padding-bottom: 10vh;
+        
+            &-textfield {
+                margin-bottom: 3.5vh;  
+                width: 18.5vw; 
+                font-size: 2rem;
+            }
+
+            &-button {
+                background-color: #ff9900;
+                color: #FFFFFF;
+                width: 8.5vw;
+                height: 5.25vh;
+                justify-content: center;
+                border-radius: 2vw;
+                box-shadow: 0 0.45vh 0 0 rgba(0, 0, 0, 0.05);
+                font-weight: 700;
+                font-size: 1.25rem;
+                margin: 5vh auto auto auto;
+                text-decoration: none;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                text-transform: none;
+            }
         }
     }
 }

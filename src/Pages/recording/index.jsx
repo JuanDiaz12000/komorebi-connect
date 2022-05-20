@@ -6,8 +6,8 @@ import SideBar from '../../GlobalComponents/sideBar';
 function RecordingSessionPage() {
     return (
         <div className="centerScreen">
-          <SideBar/>
-          <div className='centerPart' style={{flexDirection:'row', justifyContent:'space-between', alignContent:'center'}}>
+          <SideBar userName= 'Anny Verduzco' userType='Manager'/>
+          <div className='centerPartR'>
             <AmazonConnectWindow/>
             <RecordingScreenDialog/>
           </div>

@@ -6,7 +6,7 @@ import VideoSelect from './components/videoSelect'
 function VideoSearchPage() {
     return(    
       <div className="centerScreen">
-      <SideBar/>
+      <SideBar userName= 'Anny Verduzco' userType='Manager'/>
         <div className='centerPart'>
             <h2>Search</h2>
             <SearchBar/>

@@ -1,0 +1,20 @@
+.upperContainer{
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-start;
+    align-content:center;
+    margin-left: 10vw;
+    margin-right: auto;
+    width: 85vw
+}
+.bottomContainer{
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-start;
+    align-content:center;
+    margin-left: 10vw;
+    margin-right: auto;
+    margin-top: 5vh;
+    width:85vw;
+    height: 20vh;
+}
